@@ -1,0 +1,61 @@
+.navbar {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.phoneIcon {
+  margin-right: -2px;
+}
+
+@media (max-width: 600px) {
+  .logoText {
+    font-size: 1rem;
+  }
+  .cta {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

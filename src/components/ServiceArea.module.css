@@ -1,0 +1,64 @@
+.serviceArea {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.cityPill {
+  background-color: var(--color-navy-dark);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.cityPill:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  cursor: default;
+}
+
+.bottomText {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.bottomText strong {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.bottomText strong:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}

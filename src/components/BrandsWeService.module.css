@@ -1,0 +1,66 @@
+.brandsSection {
+  background-color: var(--color-bg-light);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.brandCard {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  min-width: 150px;
+}
+
+.brandCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-navy);
+}
+
+.brandName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .brandCard {
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+  }
+  .brandName {
+    font-size: 1.1rem;
+  }
+}
