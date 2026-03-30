@@ -117,36 +117,36 @@ export default function BrandApplianceRepair() {
       {/* ============================================================
            SECTION: PAIN POINTS (ENGAGING, EMPATHETIC REWRITE)
       ============================================================ */}
-      <section id="pain-points" className={`${styles.sectionBlock} ${styles.sectionLight}`} style={{ backgroundColor: '#ffffff' }}>
+      <section id="pain-points" className={`${styles.sectionBlock} ${styles.sectionLight}`} style={{ backgroundColor: 'var(--color-white)' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <span className={styles.heroEyebrow}>Diagnostics</span>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#0f172a', textTransform: 'uppercase' }}>IS YOUR {brandName} ACTING UP?</h2>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: '900', color: 'var(--color-navy)', textTransform: 'uppercase' }}>IS YOUR {brandName} ACTING UP?</h2>
         </div>
 
         <div className={`${styles.servicesGrid} ${styles.symptomsGrid}`} style={{ marginBottom: '3rem' }}>
-          <div className={styles.serviceCard} style={{ padding: '0', background: '#f8fafc' }}>
+          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: '#0f172a' }}>Won't drain or spin</h3>
-                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Standing water in the drum, cycles refusing to finish, or terrifying banging noises during the high-speed spin cycle.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Won't drain or spin</h3>
+                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Standing water in the drum, cycles refusing to finish, or terrifying banging noises during the high-speed spin cycle.</p>
              </div>
           </div>
-          <div className={styles.serviceCard} style={{ padding: '0', background: '#f8fafc' }}>
+          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
             <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: '#0f172a' }}>Leaking water</h3>
-                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Mysterious, disastrous puddles forming under the machine, ripped door seals causing drips, or damaged inlet hoses.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Leaking water</h3>
+                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Mysterious, disastrous puddles forming under the machine, ripped door seals causing drips, or damaged inlet hoses.</p>
             </div>
           </div>
-          <div className={styles.serviceCard} style={{ padding: '0', background: '#f8fafc' }}>
+          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: '#0f172a' }}>Digital Error Codes</h3>
-                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Cryptic alarms and error codes flashing violently across the control board while the machine locks you out entirely.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Digital Error Codes</h3>
+                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Cryptic alarms and error codes flashing violently across the control board while the machine locks you out entirely.</p>
              </div>
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', fontSize: '1.35rem', fontWeight: '900', color: '#0f172a', lineHeight: '1.4' }}>
+        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', fontSize: '1.35rem', fontWeight: '900', color: 'var(--color-navy)', lineHeight: '1.4' }}>
           <p>Don't let an amateur void your {brandName} warranty.</p>
-          <p style={{ color: '#0b5ee6', marginTop: '0.5rem', fontSize: '1.1rem', fontWeight: '700' }}>We dispatch factory-trained experts equipped with genuine {brandName} replacement parts directly to your door today.</p>
+          <p style={{ color: 'var(--color-primary)', marginTop: '0.5rem', fontSize: '1.1rem', fontWeight: '700' }}>We dispatch factory-trained experts equipped with genuine {brandName} replacement parts directly to your door today.</p>
         </div>
       </section>
 
@@ -312,14 +312,14 @@ export default function BrandApplianceRepair() {
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerBrand}>
-            <h3><Wrench size={24} color="#0b5ee6" /> HomeFixApplianceRepair</h3>
+            <h3><Wrench size={24} color="var(--color-primary)" /> HomeFixApplianceRepair</h3>
             <p>Your trusted local partner for fast, reliable, and professional household appliance repairs. Available 7 days a week.</p>
           </div>
           
           <div className={styles.footerLinks}>
             <a href="#services">Services</a>
             <a href="#why-us">Why Us</a>
-            <a href="tel:9789153780" style={{ color: '#0b5ee6' }}>Call Now</a>
+            <a href="tel:9789153780" style={{ color: 'var(--color-primary)' }}>Call Now</a>
           </div>
         </div>
         

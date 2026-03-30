@@ -1,15 +1,12 @@
-"use client";
-
 import { CheckCircle, Clock, Wrench, Shield, AlertTriangle, Droplets, Activity, Phone } from 'lucide-react';
 import styles from '../brand.module.css';
 import heroStyles from '@/components/HeroSection.module.css';
 import { useSearchParams } from 'next/navigation';
 
-export default function LgWasherRepairPage() {
+export default function WasherRepairPage() {
   const searchParams = useSearchParams();
   const rawCity = searchParams.get('city');
   const cityName = rawCity ? rawCity.charAt(0).toUpperCase() + rawCity.slice(1) : 'Your Area';
-  const brandName = "LG";
 
   return (
     <div className={styles.pageWrapper}>
@@ -19,7 +16,7 @@ export default function LgWasherRepairPage() {
       ============================================================ */}
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <strong>HomeFix {brandName} Repair</strong>
+          <strong>HomeFix Washer Repair</strong>
         </div>
 
         <div className={styles.navLinks}>
@@ -41,17 +38,17 @@ export default function LgWasherRepairPage() {
           <div className={heroStyles.content} style={{ textAlign: 'left', alignItems: 'flex-start' }}>
             <div className={heroStyles.badge}>
               <div className={heroStyles.dot}></div>
-              LG Washer Specialists Available Now
+              Local Washer Specialists Available Now
             </div>
             
             <h1 className={heroStyles.title}>
               Fast, Same-Day <br/>
-              <span style={{ color: 'var(--color-primary)' }}>LG Washer Repair</span> In<br/>
+              <span style={{ color: 'var(--color-primary)' }}>Washer Repair</span> In<br/>
               {cityName}
             </h1>
             
             <p className={heroStyles.subtitle}>
-              We fix LG LE errors, draining issues & door locks FAST. Trusted expert technicians equipped with specialized LG diagnostic tools. Call before 12 PM for guaranteed same-day service!
+              We fix top-load and front-load washers FAST. Trusted expert technicians equipped to solve draining, spinning, and leaking issues. Call before 12 PM for guaranteed same-day service!
             </p>
             
             <div className={heroStyles.ctaGroup}>
@@ -60,7 +57,7 @@ export default function LgWasherRepairPage() {
                 Call Now: (978) 915-3780
               </a>
               <p className={heroStyles.trustText}>
-                ✓ Original LG Parts ✓ Background Checked
+                ✓ Original Parts ✓ Background Checked
               </p>
             </div>
             
@@ -88,21 +85,21 @@ export default function LgWasherRepairPage() {
           <div className={styles.statHeader}>
             <Clock size={16} /> Fast Response
           </div>
-          <h3>Same Day Service</h3>
+          <h3 style={{ textAlign: 'left' }}>Same Day Service</h3>
         </div>
 
         <div className={styles.statBox}>
           <div className={styles.statHeader}>
             <CheckCircle size={16} /> Our Promise
           </div>
-          <h3>90-Day Guarantee</h3>
+          <h3 style={{ textAlign: 'left' }}>90-Day Guarantee</h3>
         </div>
 
         <div className={styles.statBox}>
           <div className={styles.statHeader}>
             <Wrench size={16} /> Transparent
           </div>
-          <h3>Upfront Pricing</h3>
+          <h3 style={{ textAlign: 'left' }}>Upfront Pricing</h3>
         </div>
       </section>
 
@@ -111,34 +108,34 @@ export default function LgWasherRepairPage() {
       ============================================================ */}
       <section className={styles.sectionBlock}>
         <div className={styles.sectionHeader}>
-          <h2>Is Your LG Washer Acting Up?</h2>
-          <p>LG Front-Load and Top-Load washers require specialized diagnostic tools to fix correctly. Don't let an amateur void your warranty.</p>
+          <h2>Is Your Washer Acting Up?</h2>
+          <p>Don't let a mountain of dirty laundry stress you out. We specialize in diagnosing washer components to fix them on the first visit.</p>
         </div>
         
         <div className={styles.whyGrid} style={{ marginTop: '3rem' }}>
           
           <div className={styles.whyCard}>
             <div className={styles.whyIcon}>
+               <Activity size={24} />
+            </div>
+            <h3>Not Spinning</h3>
+            <p>Broken drive belts, lid switch failures, or worn motor couplings can completely stop your spin cycle.</p>
+          </div>
+
+          <div className={styles.whyCard}>
+            <div className={styles.whyIcon}>
                <AlertTriangle size={24} />
             </div>
-            <h3>LE / dE / tE Error Codes</h3>
-            <p>Direct drive motor failures, bad door locks, or sensor wiring issues that stop your washer mid-cycle.</p>
+            <h3>Leaking Water</h3>
+            <p>Torn front-load door boot seals, cracked hoses, or a failing water inlet valve causing puddles.</p>
           </div>
 
           <div className={styles.whyCard}>
             <div className={styles.whyIcon}>
                <Droplets size={24} />
             </div>
-            <h3>Not Draining (OE Error)</h3>
-            <p>Water sitting in the drum at the end of the cycle due to a clogged drain pump filter or burned-out pump motor.</p>
-          </div>
-
-          <div className={styles.whyCard}>
-            <div className={styles.whyIcon}>
-               <Activity size={24} />
-            </div>
-            <h3>Violent Shaking & Banging</h3>
-            <p>Your LG sounds like a jet engine on spin cycle. We replace worn shock absorbers and rear tub bearings.</p>
+            <h3>Not Draining</h3>
+            <p>A damaged drain pump, clogged internal hose, or blocked filter keeping dirty water trapped inside.</p>
           </div>
           
         </div>
@@ -155,7 +152,7 @@ export default function LgWasherRepairPage() {
       ============================================================ */}
       <section className={styles.whyChooseUs}>
         <div className={styles.whyHeader}>
-          <h2>The LG Repair Process</h2>
+          <h2>The Washer Repair Process</h2>
           <p>We arrive with fully stocked trucks so we can fix your washer in a single visit.</p>
         </div>
         
@@ -168,12 +165,12 @@ export default function LgWasherRepairPage() {
           <div className={styles.whyCard} style={{ textAlign: 'center' }}>
             <div className={styles.whyIcon} style={{ margin: '0 auto 1.5rem', borderRadius: '50%', backgroundColor: 'var(--color-navy)', color: 'var(--color-white)', fontSize: '1.5rem', fontWeight: 'bold' }}>2</div>
             <h3>Expert Diagnosis</h3>
-            <p>Our technician runs onboard LG diagnostics to pinpoint the exact failing component.</p>
+            <p>Our technician will tear down the machine to pinpoint the exact failing belt, pump, or switch.</p>
           </div>
           <div className={styles.whyCard} style={{ textAlign: 'center' }}>
             <div className={styles.whyIcon} style={{ margin: '0 auto 1.5rem', borderRadius: '50%', backgroundColor: 'var(--color-primary)', color: 'var(--color-white)', fontSize: '1.5rem', fontWeight: 'bold' }}>3</div>
             <h3>Fixed Today</h3>
-            <p>We install the replacement part, test the spin cycle, and hand you a 90-day warranty.</p>
+            <p>We install the replacement part, test a load, and hand you a 90-day parts and labor warranty.</p>
           </div>
         </div>
       </section>
@@ -182,7 +179,7 @@ export default function LgWasherRepairPage() {
            SECTION: URGENCY CTA
       ============================================================ */}
       <section className={styles.urgencySection}>
-        <h2>Need LG Washer Repair Today?</h2>
+        <h2>Need Washer Repair Today?</h2>
         <p>Our technicians are currently operating in your area. Skip the automated menus and speak to a local expert right now.</p>
         <a href="tel:9789153780" className={styles.urgencyBtn}>
           <Phone /> CALL (978) 915-3780
@@ -195,8 +192,8 @@ export default function LgWasherRepairPage() {
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerBrand}>
-            <h3>HomeFix LG Washer Specialists</h3>
-            <p>Licensed & Insured dedicated {brandName} experts.</p>
+            <h3>HomeFix Washer Specialists</h3>
+            <p>Licensed & Insured dedicated appliance experts.</p>
           </div>
           <div className={styles.footerLinks}>
             <a href="#">Privacy Policy</a>

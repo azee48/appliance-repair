@@ -312,6 +312,7 @@
   border-radius: 12px;
   padding: 2rem;
   flex: 1;
+  text-align: left;
   box-shadow: var(--shadow-sm);
 }
 
