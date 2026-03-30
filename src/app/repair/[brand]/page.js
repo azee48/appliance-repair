@@ -2,12 +2,17 @@
 
 import { CheckCircle, Clock, Wrench, Shield, Refrigerator, Waves, ThermometerSnowflake } from 'lucide-react';
 import styles from '../brand.module.css';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 
 export default function BrandApplianceRepair() {
   const params = useParams();
+  const searchParams = useSearchParams();
+  
   const rawBrand = typeof params?.brand === 'string' ? params.brand : (Array.isArray(params?.brand) ? params.brand[0] : 'appliance');
   const brandName = rawBrand.charAt(0).toUpperCase() + rawBrand.slice(1);
+  
+  const rawCity = searchParams.get('city');
+  const cityName = rawCity ? rawCity.charAt(0).toUpperCase() + rawCity.slice(1) : 'Your Area';
 
   return (
     <div className={styles.pageWrapper}>
@@ -47,7 +52,7 @@ export default function BrandApplianceRepair() {
           <h1>
             Fast, Same-Day <br/>
             <span className={styles.highlightLine}>{brandName} Repair</span> In<br/>
-            Your Area
+            {cityName}
           </h1>
 
           <p className={styles.heroSub}>
