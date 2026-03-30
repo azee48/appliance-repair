@@ -307,13 +307,13 @@
 }
 
 .statBox {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-navy-dark);
+  border: 1px solid rgba(255,255,255,0.05);
   border-radius: 12px;
   padding: 2rem;
   flex: 1;
   text-align: left;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
 }
 
 .statHeader {
@@ -331,7 +331,7 @@
 .statBox h3 {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-text-dark);
+  color: var(--color-white);
   margin: 0;
 }
 
@@ -340,7 +340,21 @@
 ============================================================ */
 .sectionBlock {
   padding: 5rem 5%;
-  background-color: var(--color-bg-gray);
+  background-color: var(--color-navy);
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.sectionHeader p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .servicesGrid {
@@ -356,13 +370,13 @@
 }
 
 .serviceCard {
-  background-color: var(--color-white);
+  background-color: var(--color-navy-dark);
   border-radius: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(255,255,255,0.05);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -397,12 +411,12 @@
 .cardContent h3 {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--color-text-dark);
+  color: var(--color-white);
   margin-bottom: 0.5rem;
 }
 
 .cardContent p {
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -434,7 +448,7 @@
 ============================================================ */
 .whyChooseUs {
   padding: 5rem 5%;
-  background-color: var(--color-white);
+  background-color: var(--color-navy-dark);
 }
 
 .whyHeader {
@@ -445,8 +459,13 @@
 .whyHeader h2 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: var(--color-text-dark);
+  color: var(--color-white);
   margin-bottom: 0.5rem;
+}
+
+.whyHeader p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
 }
 
 .whyGrid {
@@ -460,9 +479,9 @@
 .whyCard {
   text-align: left;
   padding: 2.5rem;
-  background: var(--color-bg-gray);
+  background: var(--color-navy);
   border-radius: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.2s;
 }
 
@@ -485,12 +504,12 @@
 .whyCard h3 {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--color-text-dark);
+  color: var(--color-white);
   margin-bottom: 0.75rem;
 }
 
 .whyCard p {
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
 }
 

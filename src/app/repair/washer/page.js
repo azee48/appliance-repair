@@ -1,12 +1,8 @@
 import { CheckCircle, Clock, Wrench, Shield, AlertTriangle, Droplets, Activity, Phone } from 'lucide-react';
 import styles from '../brand.module.css';
 import heroStyles from '@/components/HeroSection.module.css';
-import { useSearchParams } from 'next/navigation';
 
 export default function WasherRepairPage() {
-  const searchParams = useSearchParams();
-  const rawCity = searchParams.get('city');
-  const cityName = rawCity ? rawCity.charAt(0).toUpperCase() + rawCity.slice(1) : 'Your Area';
 
   return (
     <div className={styles.pageWrapper}>
@@ -43,8 +39,7 @@ export default function WasherRepairPage() {
             
             <h1 className={heroStyles.title}>
               Fast, Same-Day <br/>
-              <span style={{ color: 'var(--color-primary)' }}>Washer Repair</span> In<br/>
-              {cityName}
+              <span style={{ color: 'var(--color-primary)' }}>Washer Repair</span>
             </h1>
             
             <p className={heroStyles.subtitle}>

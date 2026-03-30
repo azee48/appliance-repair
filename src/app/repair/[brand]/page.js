@@ -3,17 +3,10 @@
 import { CheckCircle, Clock, Wrench, Shield, Refrigerator, Waves, ThermometerSnowflake, Phone } from 'lucide-react';
 import styles from '../brand.module.css';
 import heroStyles from '@/components/HeroSection.module.css';
-import { useParams, useSearchParams } from 'next/navigation';
 
-export default function BrandApplianceRepair() {
-  const params = useParams();
-  const searchParams = useSearchParams();
-  
+export default function BrandApplianceRepair({ params }) {
   const rawBrand = typeof params?.brand === 'string' ? params.brand : (Array.isArray(params?.brand) ? params.brand[0] : 'appliance');
   const brandName = rawBrand.charAt(0).toUpperCase() + rawBrand.slice(1);
-  
-  const rawCity = searchParams.get('city');
-  const cityName = rawCity ? rawCity.charAt(0).toUpperCase() + rawCity.slice(1) : 'Your Area';
 
   return (
     <div className={styles.pageWrapper}>
@@ -54,8 +47,7 @@ export default function BrandApplianceRepair() {
             
             <h1 className={heroStyles.title}>
               Fast, Same-Day <br/>
-              <span style={{ color: 'var(--color-primary)' }}>{brandName} Repair</span> In<br/>
-              {cityName}
+              <span style={{ color: 'var(--color-primary)' }}>{brandName} Repair</span>
             </h1>
             
             <p className={heroStyles.subtitle}>
@@ -117,34 +109,34 @@ export default function BrandApplianceRepair() {
       {/* ============================================================
            SECTION: PAIN POINTS (ENGAGING, EMPATHETIC REWRITE)
       ============================================================ */}
-      <section id="pain-points" className={`${styles.sectionBlock} ${styles.sectionLight}`} style={{ backgroundColor: 'var(--color-white)' }}>
+      <section id="pain-points" className={`${styles.sectionBlock} ${styles.sectionLight}`}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <span className={styles.heroEyebrow}>Diagnostics</span>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: '900', color: 'var(--color-navy)', textTransform: 'uppercase' }}>IS YOUR {brandName} ACTING UP?</h2>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: '900', color: 'var(--color-white)', textTransform: 'uppercase' }}>IS YOUR {brandName} ACTING UP?</h2>
         </div>
 
         <div className={`${styles.servicesGrid} ${styles.symptomsGrid}`} style={{ marginBottom: '3rem' }}>
-          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
+          <div className={styles.serviceCard} style={{ padding: '0' }}>
              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Won't drain or spin</h3>
-                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Standing water in the drum, cycles refusing to finish, or terrifying banging noises during the high-speed spin cycle.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-white)' }}>Won't drain or spin</h3>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>Standing water in the drum, cycles refusing to finish, or terrifying banging noises during the high-speed spin cycle.</p>
              </div>
           </div>
-          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
+          <div className={styles.serviceCard} style={{ padding: '0' }}>
             <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Leaking water</h3>
-                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Mysterious, disastrous puddles forming under the machine, ripped door seals causing drips, or damaged inlet hoses.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-white)' }}>Leaking water</h3>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>Mysterious, disastrous puddles forming under the machine, ripped door seals causing drips, or damaged inlet hoses.</p>
             </div>
           </div>
-          <div className={styles.serviceCard} style={{ padding: '0', background: 'var(--color-bg-gray)' }}>
+          <div className={styles.serviceCard} style={{ padding: '0' }}>
              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Digital Error Codes</h3>
-                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Cryptic alarms and error codes flashing violently across the control board while the machine locks you out entirely.</p>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.5rem', color: 'var(--color-white)' }}>Digital Error Codes</h3>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>Cryptic alarms and error codes flashing violently across the control board while the machine locks you out entirely.</p>
              </div>
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', fontSize: '1.35rem', fontWeight: '900', color: 'var(--color-navy)', lineHeight: '1.4' }}>
+        <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto', fontSize: '1.35rem', fontWeight: '900', color: 'var(--color-white)', lineHeight: '1.4' }}>
           <p>Don't let an amateur void your {brandName} warranty.</p>
           <p style={{ color: 'var(--color-primary)', marginTop: '0.5rem', fontSize: '1.1rem', fontWeight: '700' }}>We dispatch factory-trained experts equipped with genuine {brandName} replacement parts directly to your door today.</p>
         </div>
