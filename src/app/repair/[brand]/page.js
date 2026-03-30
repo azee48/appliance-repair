@@ -163,7 +163,7 @@ export default function BrandApplianceRepair() {
           
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-              <Refrigerator size={64} opacity={0.5} />
+              <img src="/images/services/refrigerator.png" alt={`${brandName} Refrigerator Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Refrigerator</h3>
@@ -174,7 +174,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <Waves size={64} opacity={0.5} />
+               <img src="/images/services/washer.png" alt={`${brandName} Washer Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Washer</h3>
@@ -185,7 +185,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <ThermometerSnowflake size={64} opacity={0.5} />
+               <img src="/images/services/dryer.png" alt={`${brandName} Dryer Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Dryer</h3>
@@ -196,7 +196,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <CheckCircle size={64} opacity={0.5} />
+               <img src="/images/services/dishwasher.png" alt={`${brandName} Dishwasher Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Dishwasher</h3>
@@ -207,7 +207,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <ThermometerSnowflake size={64} opacity={0.5} />
+               <img src="/images/services/oven.png" alt={`${brandName} Oven & Range Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Oven & Range</h3>
@@ -218,7 +218,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <Waves size={64} opacity={0.5} />
+               <img src="/images/services/microwave.png" alt={`${brandName} Microwave Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Microwave</h3>
@@ -229,7 +229,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <Refrigerator size={64} opacity={0.5} />
+               <img src="/images/services/freezer.png" alt={`${brandName} Freezer Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Freezer</h3>
@@ -240,7 +240,7 @@ export default function BrandApplianceRepair() {
 
           <div className={styles.serviceCard}>
             <div className={styles.cardImgWrap}>
-               <Wrench size={64} opacity={0.5} />
+               <img src="/images/services/disposal.png" alt={`Garbage Disposal Repair`} />
             </div>
             <div className={styles.cardContent}>
               <h3>Garbage Disposal</h3>

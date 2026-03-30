@@ -17,8 +17,8 @@ export default function Home() {
       <main style={{ paddingBottom: '70px' }}> {/* Padding for mobile sticky bar */}
         <HeroSection />
         <FeaturesBar />
-        <BrandsWeService />
         <ServicesGrid />
+        <BrandsWeService />
         <TrustSection />
         <GallerySection />
         <Testimonials />
