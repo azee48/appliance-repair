@@ -307,13 +307,13 @@
 }
 
 .statBox {
-  background-color: var(--color-navy-dark);
-  border: 1px solid rgba(255,255,255,0.05);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 2rem;
   flex: 1;
   text-align: left;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 
 .statHeader {
@@ -331,7 +331,7 @@
 .statBox h3 {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-white);
+  color: var(--color-navy);
   margin: 0;
 }
 
@@ -340,18 +340,18 @@
 ============================================================ */
 .sectionBlock {
   padding: 5rem 5%;
-  background-color: var(--color-navy);
+  background-color: var(--color-bg-gray);
 }
 
 .sectionHeader h2 {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 1rem;
-  color: var(--color-white);
+  color: var(--color-navy);
 }
 
 .sectionHeader p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-light);
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto;
@@ -370,13 +370,13 @@
 }
 
 .serviceCard {
-  background-color: var(--color-navy-dark);
+  background-color: var(--color-white);
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid var(--color-border);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -411,12 +411,12 @@
 .cardContent h3 {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--color-white);
+  color: var(--color-navy);
   margin-bottom: 0.5rem;
 }
 
 .cardContent p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-light);
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -517,7 +517,7 @@
    SECTION: URGENCY CTA
 ============================================================ */
 .urgencySection {
-  background-color: var(--color-navy);
+  background-color: var(--color-primary);
   color: var(--color-white);
   padding: 5rem 5%;
   text-align: center;
@@ -527,11 +527,12 @@
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 1rem;
+  color: var(--color-white);
 }
 
 .urgencySection p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   margin: 0 auto 2.5rem;
 }
@@ -540,8 +541,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
   padding: 1.25rem 2.5rem;
   border-radius: 50px;
   font-size: 1.25rem;
