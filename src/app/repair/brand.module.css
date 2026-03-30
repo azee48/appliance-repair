@@ -332,7 +332,6 @@
   font-weight: 800;
   color: var(--color-text-dark);
   margin: 0;
-  text-decoration: line-through; /* Only for the $0 service fee part technically, but let's handle in JS */
 }
 
 /* ============================================================
@@ -676,4 +675,21 @@
   .nav { padding: 1rem; }
   .logo strong { font-size: 1rem; }
   .navCta { font-size: 0.85rem; padding: 0.6rem 1rem; }
+  
+  /* Shrink badge to fit perfectly on compressed mobile image */
+  .trustFloatBadge {
+    padding: 0.75rem 1rem;
+    bottom: 0.5rem;
+    gap: 0.75rem;
+  }
+  .trustFloatIcon {
+    width: 32px;
+    height: 32px;
+  }
+  .trustFloatText strong {
+    font-size: 0.95rem;
+  }
+  .trustFloatText span {
+    font-size: 0.75rem;
+  }
 }
