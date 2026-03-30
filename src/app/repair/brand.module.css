@@ -604,6 +604,7 @@
   .heroRight {
     order: -1;
     margin-bottom: 1rem;
+    height: 320px;
   }
   .heroLeft {
     align-items: flex-start;
@@ -662,9 +663,13 @@
 
 @media (max-width: 600px) {
   .hero {
-    padding: 2rem 5%;
+    padding: 1rem 5% 2rem;
   }
-  .hero h1 { font-size: 2.2rem; }
+  .heroRight {
+    height: 240px;
+    margin-bottom: 0.5rem;
+  }
+  .hero h1 { font-size: 2rem; }
   .btnSolid, .btnGhost { width: 100%; flex: auto; }
   .servicesGrid { grid-template-columns: 1fr; }
   .navLinks { display: none; }
