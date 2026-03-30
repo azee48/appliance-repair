@@ -1,9 +1,9 @@
 /* lg.module.css - ProFix UI Clone */
 
 .pageWrapper {
-  --color-brand-blue: #0b5ee6;
-  --color-brand-blue-hover: #084eb8;
-  --color-bg-gray: #f8fafc;
+  --color-brand-blue: var(--color-primary);
+  --color-brand-blue-hover: var(--color-primary-hover);
+  --color-bg-gray: var(--color-bg-light);
   --color-text-dark: #0f172a;
   --color-text-light: #64748b;
   
@@ -164,7 +164,7 @@
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.5px;
-  box-shadow: 0 6px 15px rgba(11, 94, 230, 0.3);
+  box-shadow: 0 6px 15px rgba(255, 107, 0, 0.3);
   transition: all 0.2s;
   border: none;
   cursor: pointer;
@@ -176,7 +176,7 @@
 
 .btnSolid:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(11, 94, 230, 0.4);
+  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.4);
 }
 
 .btnGhost {
@@ -187,7 +187,7 @@
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
-  border: 1px solid rgba(11, 94, 230, 0.3);
+  border: 1px solid rgba(255, 107, 0, 0.3);
   transition: all 0.2s;
   display: flex;
   align-items: center;
@@ -196,7 +196,7 @@
 }
 
 .btnGhost:hover {
-  background-color: rgba(11, 94, 230, 0.05);
+  background-color: rgba(255, 107, 0, 0.05);
 }
 
 .heroReviewsRow {
@@ -472,7 +472,7 @@
 .whyIcon {
   width: 50px;
   height: 50px;
-  background: rgba(11, 94, 230, 0.1);
+  background: rgba(255, 107, 0, 0.1);
   color: var(--color-brand-blue);
   display: flex;
   align-items: center;
@@ -497,7 +497,7 @@
    SECTION: URGENCY CTA
 ============================================================ */
 .urgencySection {
-  background-color: var(--color-brand-blue);
+  background-color: var(--color-navy);
   color: var(--color-white);
   padding: 5rem 5%;
   text-align: center;
@@ -520,8 +520,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  background-color: var(--color-white);
-  color: var(--color-brand-blue);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding: 1.25rem 2.5rem;
   border-radius: 50px;
   font-size: 1.25rem;

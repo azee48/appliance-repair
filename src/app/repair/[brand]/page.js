@@ -1,7 +1,8 @@
 "use client";
 
-import { CheckCircle, Clock, Wrench, Shield, Refrigerator, Waves, ThermometerSnowflake } from 'lucide-react';
+import { CheckCircle, Clock, Wrench, Shield, Refrigerator, Waves, ThermometerSnowflake, Phone } from 'lucide-react';
 import styles from '../brand.module.css';
+import heroStyles from '@/components/HeroSection.module.css';
 import { useParams, useSearchParams } from 'next/navigation';
 
 export default function BrandApplianceRepair() {
@@ -42,53 +43,47 @@ export default function BrandApplianceRepair() {
       {/* ============================================================
            SECTION: HERO SPLIT
       ============================================================ */}
-      <section className={styles.hero}>
-        <div className={styles.heroLeft}>
-          <div className={styles.heroEyebrow}>
-            <span className={styles.heroEyebrowDot}></span>
-            {brandName} Technicians Near You Available Now
-          </div>
-
-          <h1>
-            Fast, Same-Day <br/>
-            <span className={styles.highlightLine}>{brandName} Repair</span> In<br/>
-            {cityName}
-          </h1>
-
-          <p className={styles.heroSub}>
-            Trusted expert local technicians specifically trained for all {brandName} models. 90-day warranty on all parts and labor. Call before 12 PM for guaranteed same-day service!
-          </p>
-
-          <div className={styles.heroButtons}>
-            <a href="tel:9789153780" className={styles.btnSolid}>CALL (978) 915-3780</a>
-          </div>
-
-          <div className={styles.heroReviewsRow}>
-            <div className={styles.avatarGroup}>
-              <div className={styles.avatar} style={{ backgroundColor: '#cbd5e1' }}></div>
-              <div className={styles.avatar} style={{ backgroundColor: '#94a3b8' }}></div>
-              <div className={styles.avatar} style={{ backgroundColor: '#64748b' }}></div>
+      <section className={heroStyles.hero}>
+        <div className={heroStyles.overlay}></div>
+        <div className={`container ${heroStyles.container}`}>
+          <div className={heroStyles.content} style={{ textAlign: 'left', alignItems: 'flex-start' }}>
+            <div className={heroStyles.badge}>
+              <div className={heroStyles.dot}></div>
+              {brandName} Technicians Near You Available Now
             </div>
-            <div className={styles.reviewText}>
-              <div className={styles.stars}>★★★★★</div>
-              <span>Over 5,000+ 5-Star Reviews Locally</span>
+            
+            <h1 className={heroStyles.title}>
+              Fast, Same-Day <br/>
+              <span style={{ color: 'var(--color-primary)' }}>{brandName} Repair</span> In<br/>
+              {cityName}
+            </h1>
+            
+            <p className={heroStyles.subtitle}>
+              Trusted expert local technicians specifically trained for all {brandName} models. 90-day warranty on all parts and labor. Call before 12 PM for guaranteed same-day service!
+            </p>
+            
+            <div className={heroStyles.ctaGroup}>
+              <a href="tel:9789153780" className={`btn btn-primary ${heroStyles.ctaBtn}`}>
+                <Phone size={24} className={heroStyles.icon} />
+                Call Now: (978) 915-3780
+              </a>
+              <p className={heroStyles.trustText}>
+                ✓ Licensed, Bonded & Insured ✓ Background Checked
+              </p>
             </div>
-          </div>
-        </div>
+            
+            <div className={styles.heroReviewsRow} style={{ marginTop: '2.5rem', zIndex: 2, position: 'relative' }}>
+              <div className={styles.avatarGroup}>
+                <div className={styles.avatar} style={{ backgroundColor: '#cbd5e1' }}></div>
+                <div className={styles.avatar} style={{ backgroundColor: '#94a3b8' }}></div>
+                <div className={styles.avatar} style={{ backgroundColor: '#64748b' }}></div>
+              </div>
+              <div className={styles.reviewText}>
+                <div className={styles.stars} style={{ color: 'var(--color-primary)' }}>★★★★★</div>
+                <span style={{ color: 'rgba(255,255,255,0.9)' }}>Over 5,000+ 5-Star Reviews Locally</span>
+              </div>
+            </div>
 
-        <div className={styles.heroRight}>
-          <div className={styles.heroImageContainer}>
-            <img src="/images/hero.png" alt={`${brandName} Technician`} />
-          </div>
-
-          <div className={styles.trustFloatBadge}>
-            <div className={styles.trustFloatIcon}>
-              <Shield size={24} />
-            </div>
-            <div className={styles.trustFloatText}>
-              <strong>Licensed, Bonded & Insured</strong>
-              <span>Professional background-checked technicians</span>
-            </div>
           </div>
         </div>
       </section>
