@@ -1,27 +1,27 @@
 import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
+import WasherHeroSection from '@/components/WasherHeroSection';
 import FeaturesBar from '@/components/FeaturesBar';
-import BrandsWeService from '@/components/BrandsWeService';
-import ServicesGrid from '@/components/ServicesGrid';
-import TrustSection from '@/components/TrustSection';
+import WasherBrandsWeService from '@/components/WasherBrandsWeService';
+import WasherProblemsGrid from '@/components/WasherProblemsGrid';
+import WasherTrustSection from '@/components/WasherTrustSection';
 import GallerySection from '@/components/GallerySection';
-import Testimonials from '@/components/Testimonials';
+import WasherTestimonials from '@/components/WasherTestimonials';
 import ServiceArea from '@/components/ServiceArea';
 import Footer from '@/components/Footer';
 import StickyCallBar from '@/components/StickyCallBar';
 
-export default function Home() {
+export default function WasherLandingPage() {
   return (
     <>
       <Navbar />
       <main style={{ paddingBottom: '70px' }}> {/* Padding for mobile sticky bar */}
-        <HeroSection />
+        <WasherHeroSection />
         <FeaturesBar />
-        <ServicesGrid />
-        <BrandsWeService />
-        <TrustSection />
+        <WasherProblemsGrid />
+        <WasherBrandsWeService />
+        <WasherTrustSection />
         <GallerySection />
-        <Testimonials />
+        <WasherTestimonials />
         <ServiceArea />
       </main>
       <Footer />

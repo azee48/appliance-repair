@@ -8,17 +8,17 @@ const trustFactors = [
   {
     icon: ShieldCheck,
     title: 'Same-Day Response',
-    desc: 'When an appliance breaks down, act fast to get it online.'
+    desc: 'When your washer breaks down, act fast to get your laundry routine back online.'
   },
   {
     icon: Users,
     title: 'Professional Technicians',
-    desc: 'Highly trained professionals you can trust with your appliances.'
+    desc: 'Highly trained professionals you can trust with your front-load and top-load machines.'
   },
   {
     icon: Banknote,
     title: 'Transparent Pricing',
-    desc: 'Always know what you pay up front, with no hidden fees.'
+    desc: 'Always know what you pay up front, with no hidden fees for diagnostics or parts.'
   }
 ];
 

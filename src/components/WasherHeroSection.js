@@ -15,10 +15,10 @@ export default function HeroSection() {
             Same-Day Service Available in MA
           </div>
           <h1 className={styles.title}>
-            HomeFix Appliance Repair
+            Fast & Reliable Washer Repair
           </h1>
           <p className={styles.subtitle}>
-            Don't let a broken appliance ruin your day. Call our licensed local experts now for fast, same-day repair service.
+            Don't let a broken washer ruin your day. Call our licensed local experts now for fast, same-day top-load and front-load repair.
           </p>
           <div className={styles.ctaGroup}>
             <a onClick={trackCallConversion} href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>

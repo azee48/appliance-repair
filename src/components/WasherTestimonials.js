@@ -6,15 +6,15 @@ import { trackCallConversion } from '@/lib/gtag';
 
 const reviews = [
   {
-    text: "Fantastic service! My refrigerator stopped cooling on a Friday evening, and they were here within hours. The technician was polite, explained the issue clearly, and had the part on hand. Highly recommended!",
+    text: "Fantastic service! My front-load washer stopped draining on a Friday evening, and they were here within hours. The technician was polite and had the drain pump on hand. Highly recommended!",
     author: "Sarah M.",
   },
   {
-    text: "Very professional team. I called three different companies, and they were the only ones who gave me a transparent price estimate over the phone. Fixed my washing machine fast.",
+    text: "Very professional team. My washing machine was shaking violently. They had it balanced and fixed with new shock absorbers fast and gave a transparent price upfront.",
     author: "James T.",
   },
   {
-    text: "The technician knew exactly what the problem was with my oven before he even took it apart. Cleaned up after himself and left everything working perfectly. 5 stars all the way.",
+    text: "The technician knew exactly what the LE error code meant on my LG washer before he even took it apart. Cleaned up after himself and left it running perfectly. 5 stars.",
     author: "Linda R.",
   }
 ];
