@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={`container ${styles.container}`}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <h3>Fast Appliance Repair</h3>
+            <h3>HomeFix Appliance Repair</h3>
             <p>Your trusted local experts for all major household appliance repairs.</p>
           </div>
           <div className={styles.links}>
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} Fast Appliance Repair. All rights reserved.</p>
+          <p>&copy; {currentYear} HomeFix Appliance Repair. All rights reserved.</p>
           <div className={styles.legal}>
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms of Service</Link>
