@@ -1,22 +1,20 @@
-import { Refrigerator, WashingMachine, Flame, ChefHat, Microwave, ThermometerSnowflake, Droplet, Wind } from 'lucide-react';
-import styles from './ServicesGrid.module.css';
+import { Activity, Droplet, AlertTriangle, Wind, Clock, Lock } from 'lucide-react';
+import styles from './WasherProblemsGrid.module.css';
 
 const services = [
-  { name: 'Refrigerators', icon: Refrigerator },
-  { name: 'Washers', icon: WashingMachine },
-  { name: 'Dryers', icon: Wind }, // Using Wind for Dryer
-  { name: 'Dishwashers', icon: Droplet }, // Using Droplet for Dishwasher
-  { name: 'Ovens/Ranges', icon: Flame },
-  { name: 'Microwaves', icon: Microwave },
-  { name: 'Freezers', icon: ThermometerSnowflake },
-  { name: 'HVAC/AC', icon: Wind }
+  { name: 'Not Spinning', icon: Activity },
+  { name: 'Not Draining', icon: Droplet },
+  { name: 'Leaking Water', icon: AlertTriangle },
+  { name: 'Loud Banging', icon: Wind },
+  { name: 'Cycle Wont Finish', icon: Clock },
+  { name: 'Door Wont Lock', icon: Lock }
 ];
 
-export default function ServicesGrid() {
+export default function WasherProblemsGrid() {
   return (
     <section className={`section-padding ${styles.servicesSection}`}>
       <div className={`container ${styles.container}`}>
-        <h2 className={`text-center ${styles.title}`}>We Repair All Major Appliances</h2>
+        <h2 className={`text-center ${styles.title}`}>Common Washer Problems We Fix</h2>
         
         <div className={styles.grid}>
           {services.map((service, idx) => {

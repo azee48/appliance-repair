@@ -2,11 +2,12 @@
 
 import { Phone } from 'lucide-react';
 import styles from './StickyCallBar.module.css';
+import { trackCallConversion } from '@/lib/gtag';
 
 export default function StickyCallBar() {
   return (
     <div className={styles.stickyBar}>
-      <a href="tel:9789153780" className={styles.callButton}>
+      <a onClick={trackCallConversion} href="tel:9789153780" className={styles.callButton}>
         <div className={styles.pulseRing}></div>
         <Phone size={24} className={styles.icon} />
         <span className={styles.text}>

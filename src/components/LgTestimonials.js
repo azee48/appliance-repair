@@ -1,5 +1,8 @@
+"use client";
+
 import { Star } from 'lucide-react';
 import styles from './Testimonials.module.css'; // Reusing CSS from Testimonials
+import { trackCallConversion } from '@/lib/gtag';
 
 const reviews = [
   {
@@ -37,7 +40,7 @@ export default function LgTestimonials() {
         </div>
         
         <div className="text-center" style={{ marginTop: '3rem' }}>
-          <a href="tel:9789153780" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.25rem', fontWeight: 'bold', width: '100%', maxWidth: '400px', boxShadow: '0 4px 14px 0 rgba(255, 107, 0, 0.39)' }}>
+          <a onClick={trackCallConversion} href="tel:9789153780" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.25rem', fontWeight: 'bold', width: '100%', maxWidth: '400px', boxShadow: '0 4px 14px 0 rgba(255, 107, 0, 0.39)' }}>
             Call For LG Repair: (978) 915-3780
           </a>
         </div>

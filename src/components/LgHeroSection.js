@@ -1,5 +1,8 @@
+"use client";
+
 import { Phone } from 'lucide-react';
 import styles from './HeroSection.module.css';
+import { trackCallConversion } from '@/lib/gtag';
 
 export default function LgHeroSection() {
   return (
@@ -18,7 +21,7 @@ export default function LgHeroSection() {
             LG linear compressor failure? LE error code on your washer? Don't let a broken LG appliance ruin your day. Call our licensed local experts now for fast, same-day repair.
           </p>
           <div className={styles.ctaGroup}>
-            <a href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>
+            <a onClick={trackCallConversion} href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>
               <Phone size={24} className={styles.icon} />
               Call For LG Repair: (978) 915-3780
             </a>

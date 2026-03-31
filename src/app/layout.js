@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
             ========================================================== */}
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-YOUR_ID_HERE`}
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-17958953115`}
         />
         <Script
           id="google-ads-tracking"
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
               
               // This single tag tracks all traffic and automatically swaps
               // your phone numbers if you are using Google Call Tracking!
-              gtag('config', 'AW-YOUR_ID_HERE');
+              gtag('config', 'AW-17958953115');
             `,
           }}
         />

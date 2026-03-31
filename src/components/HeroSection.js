@@ -1,5 +1,8 @@
+"use client";
+
 import { Phone } from 'lucide-react';
 import styles from './HeroSection.module.css';
+import { trackCallConversion } from '@/lib/gtag';
 
 export default function HeroSection() {
   return (
@@ -12,13 +15,13 @@ export default function HeroSection() {
             Same-Day Service Available in MA
           </div>
           <h1 className={styles.title}>
-            HomeFix Appliance Repair
+            Fast & Reliable Washer Repair
           </h1>
           <p className={styles.subtitle}>
-            Don't let a broken appliance ruin your day. Call our licensed local experts now for fast, same-day repair service.
+            Don't let a broken washer ruin your day. Call our licensed local experts now for fast, same-day top-load and front-load repair.
           </p>
           <div className={styles.ctaGroup}>
-            <a href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>
+            <a onClick={trackCallConversion} href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>
               <Phone size={24} className={styles.icon} />
               Call Now: (978) 915-3780
             </a>

@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeaturesBar from '@/components/FeaturesBar';
 import BrandsWeService from '@/components/BrandsWeService';
-import ServicesGrid from '@/components/ServicesGrid';
+import WasherProblemsGrid from '@/components/WasherProblemsGrid';
 import TrustSection from '@/components/TrustSection';
 import GallerySection from '@/components/GallerySection';
 import Testimonials from '@/components/Testimonials';
@@ -17,7 +17,7 @@ export default function Home() {
       <main style={{ paddingBottom: '70px' }}> {/* Padding for mobile sticky bar */}
         <HeroSection />
         <FeaturesBar />
-        <ServicesGrid />
+        <WasherProblemsGrid />
         <BrandsWeService />
         <TrustSection />
         <GallerySection />

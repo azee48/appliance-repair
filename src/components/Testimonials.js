@@ -1,17 +1,20 @@
+"use client";
+
 import { Star } from 'lucide-react';
 import styles from './Testimonials.module.css';
+import { trackCallConversion } from '@/lib/gtag';
 
 const reviews = [
   {
-    text: "Fantastic service! My refrigerator stopped cooling on a Friday evening, and they were here within hours. The technician was polite, explained the issue clearly, and had the part on hand. Highly recommended!",
+    text: "Fantastic service! My front-load washer stopped draining on a Friday evening, and they were here within hours. The technician was polite and had the drain pump on hand. Highly recommended!",
     author: "Sarah M.",
   },
   {
-    text: "Very professional team. I called three different companies, and they were the only ones who gave me a transparent price estimate over the phone. Fixed my washing machine fast.",
+    text: "Very professional team. My washing machine was shaking violently. They had it balanced and fixed with new shock absorbers fast and gave a transparent price upfront.",
     author: "James T.",
   },
   {
-    text: "The technician knew exactly what the problem was with my oven before he even took it apart. Cleaned up after himself and left everything working perfectly. 5 stars all the way.",
+    text: "The technician knew exactly what the LE error code meant on my LG washer before he even took it apart. Cleaned up after himself and left it running perfectly. 5 stars.",
     author: "Linda R.",
   }
 ];
@@ -37,7 +40,7 @@ export default function Testimonials() {
         </div>
         
         <div className="text-center" style={{ marginTop: '3rem' }}>
-          <a href="tel:9789153780" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.25rem', fontWeight: 'bold', width: '100%', maxWidth: '400px', boxShadow: '0 4px 14px 0 rgba(255, 107, 0, 0.39)' }}>
+          <a onClick={trackCallConversion} href="tel:9789153780" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.25rem', fontWeight: 'bold', width: '100%', maxWidth: '400px', boxShadow: '0 4px 14px 0 rgba(255, 107, 0, 0.39)' }}>
             Schedule Your Repair: (978) 915-3780
           </a>
         </div>
