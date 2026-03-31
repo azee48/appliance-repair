@@ -32,6 +32,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className={styles.disclaimer}>
+        <p>
+          <strong>Disclaimer:</strong> HomeFix Appliance Repair is a marketing and referral service. We are not a direct service provider and do not perform appliance repair services ourselves. When you contact us, we connect you with experienced, pre-screened appliance repair professionals in your area so you receive the best possible service. Service availability and response times may vary by location and provider.
+        </p>
+      </div>
     </footer>
   );
 }
