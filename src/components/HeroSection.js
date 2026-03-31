@@ -15,7 +15,7 @@ export default function HeroSection() {
             Same-Day Service Available in MA
           </div>
           <h1 className={styles.title}>
-            HomeFix Appliance Repair
+            Same Day Appliance Repair
           </h1>
           <p className={styles.subtitle}>
             Don't let a broken appliance ruin your day. Call our licensed local experts now for fast, same-day repair service.
