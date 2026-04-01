@@ -1,0 +1,4 @@
+/* Override hero background for fridge page */
+.hero {
+  background-image: url('/images/fridge-hero.png');
+}
