@@ -14,9 +14,9 @@ export default function Navbar() {
           <span className={styles.logoText}>HomeFix Appliance Repair</span>
         </Link>
         <div className={styles.actions}>
-          <a onClick={trackCallConversion} href="tel:9789153780" className={`btn btn-primary ${styles.cta}`}>
+          <a onClick={trackCallConversion} href="tel:8665656212" className={`btn btn-primary ${styles.cta}`}>
             <Phone size={18} className={styles.phoneIcon} />
-            CALL (978) 915-3780
+            CALL (866) 565-6212
           </a>
         </div>
       </div>

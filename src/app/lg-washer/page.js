@@ -12,7 +12,7 @@ import StickyCallBar from '@/components/StickyCallBar';
 
 export const metadata = {
   title: 'LG Washer Repair Near Me — Same-Day Service | HomeFix',
-  description: 'Expert LG washer repair for all models and error codes. LG-trained technicians with genuine parts. Same-day service available. Call (978) 915-3780.',
+  description: 'Expert LG washer repair for all models and error codes. LG-trained technicians with genuine parts. Same-day service available. Call (866) 565-6212.',
 };
 
 export default function LgWasherPage() {

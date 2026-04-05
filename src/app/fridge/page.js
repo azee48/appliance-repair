@@ -12,7 +12,7 @@ import StickyCallBar from '@/components/StickyCallBar';
 
 export const metadata = {
   title: 'Refrigerator Repair Near Me | Same-Day Fridge Repair in MA',
-  description: 'Fast, reliable refrigerator repair in Massachusetts. Licensed technicians for all major brands — LG, Samsung, GE, Whirlpool & more. Same-day service available. Call (978) 915-3780.',
+  description: 'Fast, reliable refrigerator repair in Massachusetts. Licensed technicians for all major brands — LG, Samsung, GE, Whirlpool & more. Same-day service available. Call (866) 565-6212.',
 };
 
 export default function FridgeLandingPage() {

@@ -12,7 +12,7 @@ import StickyCallBar from '@/components/StickyCallBar';
 
 export const metadata = {
   title: 'Samsung Dishwasher Repair Near Me — Same-Day Service | HomeFix',
-  description: 'Expert Samsung dishwasher repair for all models and error codes. Samsung-trained technicians with genuine OEM parts. Same-day service available. Call (978) 915-3780.',
+  description: 'Expert Samsung dishwasher repair for all models and error codes. Samsung-trained technicians with genuine OEM parts. Same-day service available. Call (866) 565-6212.',
 };
 
 export default function SamsungDishwasherPage() {

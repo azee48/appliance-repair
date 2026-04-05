@@ -21,9 +21,9 @@ export default function LgHeroSection() {
             LG linear compressor failure? LE error code on your washer? Don't let a broken LG appliance ruin your day. Call our licensed local experts now for fast, same-day repair.
           </p>
           <div className={styles.ctaGroup}>
-            <a onClick={trackCallConversion} href="tel:9789153780" className={`btn btn-primary ${styles.ctaBtn}`}>
+            <a onClick={trackCallConversion} href="tel:8665656212" className={`btn btn-primary ${styles.ctaBtn}`}>
               <Phone size={24} className={styles.icon} />
-              Call For LG Repair: (978) 915-3780
+              Call For LG Repair: (866) 565-6212
             </a>
             <p className={styles.trustText}>
               ✓ LG Specialists ✓ Same-Day Service

@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className={styles.contact}>
             <h4>Contact</h4>
-            <p>Phone: <strong>(978) 915-3780</strong></p>
+            <p>Phone: <strong>(866) 565-6212</strong></p>
             <p>24/7 Emergency Service Available</p>
           </div>
         </div>

@@ -12,7 +12,7 @@ import StickyCallBar from '@/components/StickyCallBar';
 
 export const metadata = {
   title: 'Maytag Washer Repair Near Me — Same-Day Service | HomeFix',
-  description: 'Expert Maytag washer repair for all models and error codes. Maytag-trained technicians with genuine OEM parts. Same-day service available. Call (978) 915-3780.',
+  description: 'Expert Maytag washer repair for all models and error codes. Maytag-trained technicians with genuine OEM parts. Same-day service available. Call (866) 565-6212.',
 };
 
 export default function MaytagWasherPage() {
