@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           <div className={styles.badge}>
-            ⭐⭐⭐⭐⭐ 5-Star Rated Service Professionals
+            Fast Help From Experienced Technicians
           </div>
           <h1 className={styles.title}>
             Fast & Reliable Washer Repair
