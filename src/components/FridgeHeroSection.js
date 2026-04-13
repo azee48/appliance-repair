@@ -12,7 +12,6 @@ export default function FridgeHeroSection() {
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           <div className={styles.badge}>
-            <div className={styles.dot}></div>
             ⭐⭐⭐⭐⭐ 5-Star Rated Service Professionals
           </div>
           <h1 className={styles.title}>
