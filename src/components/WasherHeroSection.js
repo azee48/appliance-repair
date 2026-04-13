@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className={styles.content}>
           <div className={styles.badge}>
             <div className={styles.dot}></div>
-            Same-Day Service Available in MA
+            ⭐⭐⭐⭐⭐ 5-Star Rated Service Professionals
           </div>
           <h1 className={styles.title}>
             Fast & Reliable Washer Repair
