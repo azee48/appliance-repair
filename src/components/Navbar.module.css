@@ -26,10 +26,9 @@
 }
 
 .logoIcon {
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-sm);
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .logoText {
