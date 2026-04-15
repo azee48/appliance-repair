@@ -12,7 +12,7 @@ export default function SamsungDishwasherHeroSection() {
         <div className={styles.content}>
           <div className={styles.badge}>
             <div className={styles.dot}></div>
-            Samsung Certified Technicians — Same-Day Service in MA
+            Samsung Certified Technicians — Same-Day Service Available
           </div>
           <h1 className={styles.title}>
             Samsung Dishwasher Repair — Fixed Today

@@ -12,7 +12,7 @@ export default function MaytagWasherHeroSection() {
         <div className={styles.content}>
           <div className={styles.badge}>
             <div className={styles.dot}></div>
-            Maytag Certified Technicians — Same-Day Service in MA
+            Maytag Certified Technicians — Same-Day Service Available
           </div>
           <h1 className={styles.title}>
             Maytag Washer Repair — Fixed Today

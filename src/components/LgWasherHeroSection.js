@@ -12,7 +12,7 @@ export default function LgWasherHeroSection() {
         <div className={styles.content}>
           <div className={styles.badge}>
             <div className={styles.dot}></div>
-            LG Certified Technicians — Same-Day Service in MA
+            LG Certified Technicians — Same-Day Service Available
           </div>
           <h1 className={styles.title}>
             LG Washer Repair — Fixed Today

@@ -12,7 +12,7 @@ export default function BoschDishwasherHeroSection() {
         <div className={styles.content}>
           <div className={styles.badge}>
             <div className={styles.dot}></div>
-            Bosch Certified Technicians — Same-Day Service in MA
+            Bosch Certified Technicians — Same-Day Service Available
           </div>
           <h1 className={styles.title}>
             Bosch Dishwasher Repair — Fixed Today
