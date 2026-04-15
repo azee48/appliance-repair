@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
           <div className={styles.badge}>
-            Fast Help From Experienced Technicians
+            5 Star Rated Professionals
           </div>
           <h1 className={styles.title}>
             Same Day Appliance Repair
